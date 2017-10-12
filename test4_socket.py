@@ -22,7 +22,7 @@ def abrir_socket():
 	s.listen(1) #se deja el socket esperando a clientes
 	cliente,a=s.accept()
 	print("se ha conectado un cliente", cliente)
-	print("no se que significa a pero lo pongo: ",a)
+	print("Informacion adicional: ",a)
 
 	while True:
 		data=cliente.recv(1) #recibimos un byte.
